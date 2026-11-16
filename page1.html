@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gay Test</title>
+
+</head>
+
+<body>
+
+    <h2>What gender are you?</h2>
+
+<form onsubmit="goToNextPage(event)">
+    <label><input type="radio" name="answer" value="male" required>Male</label>
+    <br>
+    <label><input type="radio" name="answer" value="female">Female</label>
+
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function goToNextPage(event) {
+    event.preventDefault();
+    window.location.href = "page2.html";
+    }
+</script>
+
+
+</body>
+</html>

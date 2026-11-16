@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gay Test</title>
+
+</head>
+
+<body>
+
+    <h2>Calculating...</h2>
+
+
+<h4 id="timer">0%</h4>
+
+<script>
+  let count = 0;
+
+  const interval = setInterval(() => {
+    if (++count < 100) {
+      timer.textContent = count + "%";
+    } else {
+      clearInterval(interval);
+      timer.innerHTML = "100% Done! <br><br> <button onclick='goToNextPage(event)'>Continue</button>";
+    }
+  }, 20);
+</script>
+
+
+<script>
+    function goToNextPage(event) {
+    event.preventDefault();
+    window.location.href = "result.html";
+    }
+</script>
+
+
+</body>
+</html>

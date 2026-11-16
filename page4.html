@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gay Test</title>
+
+</head>
+
+<body>
+
+    <h2>Do you like boys?</h2>
+
+<form onsubmit="goToNextPage(event)">
+    <label><input type="radio" name="answer" value="yes" required>Yes</label>
+    <br>
+    <label><input type="radio" name="answer" value="probably">Probably</label>
+    <br>
+    <label><input type="radio" name="answer" value="maybe">Maybe</label>
+    <br>
+    <label><input type="radio" name="answer" value="probably not">Probably not</label>
+    <br>
+    <label><input type="radio" name="answer" value="no">No</label>
+
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function goToNextPage(event) {
+    event.preventDefault();
+    window.location.href = "calculating.html";
+    }
+</script>
+
+
+</body>
+</html>
